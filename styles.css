@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&display=swap');
+
+:root{
+    --font-family: "Andada Pro", serif;
+    --bg-color: #496989;
+    --primary-color: #E2F4C5 ;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.mensagem{
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+.box {
+    border: 2px solid var(--primary-color);
+    display: inline-block;
+    font-size: 4rem;
+    padding: 10px;
+    margin: 20px;
+}
+
+.btn-jogar{
+    font-size: 1.5rem;
+    color: var(--bg-color);
+    padding: 8px 15px;
+    border: 0;
+    background: var(--primary-color);
+    border-radius: 5px;
+    margin-top: 30px;
+
+}
+
+.btn-jogar:hover{
+    box-shadow:0 0 10px #fff;
+    cursor: pointer;
+
+    
+}
+
+#icone{
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 0.5s infinite  alternate;
+    margin-left: 10px;
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(5px); }
+    100% { transform: translateY(-5px); }
+}
+@keyframes mover {
+    0% { transform: translateY(5px); }
+    100% { transform: translateY(-5px); }
+}
